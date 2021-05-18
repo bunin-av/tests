@@ -1,0 +1,55 @@
+body {
+    box-sizing: border-box;
+    background: black;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.App {
+    width: 300px;
+    margin: 100px auto;
+}
+
+.container {
+    width: 165px;
+    height: 120px;
+    border: 1px solid deepskyblue;
+    border-radius: 3px;
+}
+
+.buttonPanel {
+    width: 150px;
+    height: 35px;
+    border: 1px solid deepskyblue;
+    margin: 7px auto;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.screen {
+    display: flex;
+    width: 150px;
+    height: 60px;
+    background: deepskyblue;
+    border-radius: 3px;
+    margin: 7px auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.maxValue {
+    color: crimson;
+}
+
+.button {
+    height: 22px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: deepskyblue;
+    border-radius: 3px;
+    border: none;
+}
+
