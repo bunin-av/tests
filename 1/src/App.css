@@ -2,15 +2,16 @@ body {
     box-sizing: border-box;
     background: black;
     font-weight: bold;
-    font-size: 1.8rem;
 }
 
 .App {
     width: 300px;
     margin: 100px auto;
+    display: flex;
 }
 
 .container {
+    margin: 50px;
     width: 165px;
     height: 120px;
     border: 1px solid deepskyblue;
@@ -18,10 +19,10 @@ body {
 }
 
 .buttonPanel {
-    width: 150px;
+    width: 140px;
     height: 35px;
     border: 1px solid deepskyblue;
-    margin: 7px auto;
+    margin: 10px;
     border-radius: 3px;
     display: flex;
     justify-content: space-around;
@@ -30,13 +31,14 @@ body {
 
 .screen {
     display: flex;
-    width: 150px;
-    height: 60px;
-    background: deepskyblue;
+    width: 140px;
+    height: 55px;
+    border: 1px solid deepskyblue;
     border-radius: 3px;
-    margin: 7px auto;
+    margin: 10px;
     justify-content: center;
     align-items: center;
+    color: deepskyblue;
 }
 
 
@@ -46,10 +48,34 @@ body {
 
 .button {
     height: 22px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
     background: deepskyblue;
     border-radius: 3px;
     border: none;
+}
+
+.parameters{
+    margin: 5px;
+}
+
+.parameters_screen{
+    font-size: 0.8rem;
+}
+
+.input{
+    border-radius: 3px;
+    border: 2px solid deepskyblue;
+    outline: none;
+    width: 30px;
+    height: 12px;
+    margin: 2px;
+    font-size: 0.7rem;
+    text-align: right;
+}
+
+.input__error{
+    border: 2px solid crimson;
+    background: palevioletred;
 }
 

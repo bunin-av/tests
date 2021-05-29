@@ -1,25 +1,70 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './App.css';
-import {Screen} from "./components/Screen/Screen";
-import {ButtonPanel} from "./components/ButtonPanel/ButtonPanel";
+import {Counter} from "./components/Counter/Counter";
+import {ParametersSetter} from "./components/ParametersSetter/ParametersSetter";
+
 
 function App() {
-    const [value, setValue] = useState<number>(0)
+    //Counter
+    const [counterValue, setCounterValue] = useState<number>(0)
+    const incValue = () => setCounterValue(counterValue + 1)
+    const resetValue = () => setCounterValue(0)
 
-    const incValue = () => setValue(value + 1)
-    const resetValue = () => setValue(0)
+    //ParametersSetter
+    const [startValue, setStartValue] = useState<number>(0)
+    const [maxValue, setMaxValue] = useState<number>(5)
+    const [isChangingParameters, setChangingParameters] = useState<boolean>(false)
+    const [isError, setError] = useState<boolean>(false)
+
+    const addStartValue = (value: number) => {
+        setChangingParameters(true)
+        setStartValue(value)
+    }
+    const addMaxValue = (value: number) => {
+        setChangingParameters(true)
+        setMaxValue(value)
+    }
+
+    const setParameters = () => {
+        setCounterValue(startValue)
+        setChangingParameters(false)
+        localStorage.setItem('StartValue', JSON.stringify(startValue))
+        localStorage.setItem('MaxValue', JSON.stringify(maxValue))
+    }
 
 
-    return (
-      <div className="App">
-          <div className="container">
-              <Screen value={value}/>
-              <ButtonPanel incValue={incValue}
-                           resetValue={resetValue}
-                           value={value}
-              />
-          </div>
-      </div>
+    useEffect(() => {
+        const stringStartValue = localStorage.getItem('StartValue')
+        const stringMaxValue = localStorage.getItem('MaxValue')
+        if (stringStartValue && stringMaxValue) {
+            let newSValue = JSON.parse(stringStartValue)
+            let newMValue = JSON.parse(stringMaxValue)
+            setStartValue(newSValue)
+            setMaxValue(newMValue)
+            setCounterValue(newSValue)
+        }
+    }, [])
+
+     return (
+        <div className="App">
+            <ParametersSetter
+                maxValue={maxValue}
+                startValue={startValue}
+                setParameters={setParameters}
+                setStartValue={addStartValue}
+                setMaxValue={addMaxValue}
+                isError={isError}
+                setError={setError}
+            />
+            <Counter
+                value={counterValue}
+                incValue={incValue}
+                resetValue={resetValue}
+                maxValue={maxValue}
+                isChangingParameters={isChangingParameters}
+                isError={isError}
+            />
+        </div>
     );
 }
 
