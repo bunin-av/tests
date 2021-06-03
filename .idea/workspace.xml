@@ -19,19 +19,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab5a663e-ada9-4633-8cad-81b40ffd40cd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/1/src/components/Button/Button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1/src/components/Counter/Counter.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1/src/components/Counter/Screen/CounterScreen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1/src/components/ParametersSetter/ParametersSetter.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/1/src/components/ParametersSetter/SetButton/SetButton.tsx" afterDir="false" />
+    <list default="true" id="ab5a663e-ada9-4633-8cad-81b40ffd40cd" name="Default Changelist" comment="task 2&#10;ParametersSetter added">
+      <change afterPath="$PROJECT_DIR$/1/src/components/Counter/ButtonPanel/SetModeButton/SetModeButton.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/1/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/.idea/1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/1/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/1/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1/src/components/ButtonPanel/ButtonPanel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/1/src/components/Counter/ButtonPanel/ButtonPanel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1/src/components/ButtonPanel/IncButton/IncButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/1/src/components/Counter/ButtonPanel/IncButton/IncButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1/src/components/ButtonPanel/ResButton/ResButton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/1/src/components/Counter/ButtonPanel/ResButton/ResButton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1/src/components/Screen/Screen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/1/src/components/ParametersSetter/SetterScreen/SetterScreen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/src/components/Counter/ButtonPanel/ButtonPanel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/1/src/components/Counter/ButtonPanel/ButtonPanel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/src/components/Counter/Counter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/1/src/components/Counter/Counter.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,18 +55,19 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/1/src/components/ParametersSetter" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/1/src/components/Counter/ButtonPanel" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="ts.external.directory.path" value="D:\front-end\IT-incubator\I-exams\1\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\front-end\IT-incubator\I-exams\1\src\components\ParametersSetter" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\front-end\IT-incubator\I-exams\1\src\components\Counter" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\front-end\IT-incubator\I-exams\1\src\components\Counter\ButtonPanel" />
+      <recent name="D:\front-end\IT-incubator\I-exams\1\src\components\ParametersSetter" />
     </key>
   </component>
   <component name="RunManager">
@@ -98,8 +98,26 @@
       <workItem from="1621366419672" duration="157000" />
       <workItem from="1621366622575" duration="3000" />
       <workItem from="1622273430815" duration="3476000" />
-      <workItem from="1622281433858" duration="13030000" />
+      <workItem from="1622281433858" duration="14192000" />
+      <workItem from="1622304142952" duration="1826000" />
+      <workItem from="1622491172615" duration="1892000" />
+      <workItem from="1622751816476" duration="76000" />
     </task>
+    <task id="LOCAL-00001" summary="task 2&#10;ParametersSetter added">
+      <created>1622294818865</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1622294818865</updated>
+    </task>
+    <task id="LOCAL-00002" summary="task 2&#10;ParametersSetter added">
+      <created>1622294938396</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1622294938396</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -117,30 +135,38 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="task 2&#10;ParametersSetter added" />
+    <option name="LAST_COMMIT_MESSAGE" value="task 2&#10;ParametersSetter added" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="488" y="36" key="#TypeScript" timestamp="1622288732157">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="488" y="36" key="#TypeScript/0.0.1536.824@0.0.1536.824" timestamp="1622288732157" />
-    <state width="1515" height="204" key="GridCell.Tab.0.bottom" timestamp="1622284282464">
+    <state width="1515" height="204" key="GridCell.Tab.0.bottom" timestamp="1622493083944">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="204" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622284282464" />
-    <state width="1515" height="204" key="GridCell.Tab.0.center" timestamp="1622284282464">
+    <state width="1515" height="204" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1622493083944" />
+    <state width="1515" height="204" key="GridCell.Tab.0.center" timestamp="1622493083944">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="204" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1622284282464" />
-    <state width="1515" height="204" key="GridCell.Tab.0.left" timestamp="1622284282464">
+    <state width="1515" height="204" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1622493083944" />
+    <state width="1515" height="204" key="GridCell.Tab.0.left" timestamp="1622493083944">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="204" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1622284282464" />
-    <state width="1515" height="204" key="GridCell.Tab.0.right" timestamp="1622284282464">
+    <state width="1515" height="204" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1622493083944" />
+    <state width="1515" height="204" key="GridCell.Tab.0.right" timestamp="1622493083944">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="204" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1622284282464" />
+    <state width="1515" height="204" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1622493083944" />
     <state x="277" y="57" key="SettingsEditor" timestamp="1622288720152">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1622288720152" />
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2" timestamp="1622294962543">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1622294962543" />
   </component>
 </project>

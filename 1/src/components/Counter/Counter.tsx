@@ -18,6 +18,7 @@ export function Counter(props: ScreenPropsType & ButtonPanelType) {
             resetValue={props.resetValue}
             value={props.value}
             maxValue={props.maxValue}
+            setSettMode={props.setSettMode}
           />
       </div>
     )
