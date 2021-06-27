@@ -10,6 +10,8 @@ export type ScreenPropsType = {
 }
 
 export function SetterScreen(props: ScreenPropsType) {
+
+
     const setMaxValue = (e: React.ChangeEvent<HTMLInputElement>) => {
         props.setError(false)
         props.setMaxValue(+e.currentTarget.value)
@@ -27,6 +29,8 @@ export function SetterScreen(props: ScreenPropsType) {
             props.setError(true)
         }
     }
+
+
     return (
         // <div className={screenClass}>
         <div className='screen parameters_screen'>
